@@ -1,49 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Jost:wght@300;500&family=Oxanium:wght@500&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Jost:wght@300;500&family=Oxanium:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+
     <title>TO DO LIST</title>
-</head>
-<body>
- <div class="dark-mode-toggle">
-          <button id="dark-mode-button">
-              <i class="fas fa-sun"></i>
-              <i class="fas fa-moon"></i>
-          </button>
-      </div>
+  </head>
+  <body class="light-mode">
+    <div class="dark-mode-toggle">
+      <button id="dark-mode-button">
+        <i class="fas fa-sun"></i>
+        <i class="fas fa-moon"></i>
+      </button>
+    </div>
     <div class="container">
-        <h1>CHECKLIST</h1>
+      <h1>CHECKLIST</h1>
 
-
-  
-    
-        <ul id="checklist">
-          <li class="item">DIETA <input type="checkbox" class="checkbox"></li>
-          <li class="item">TREINO <input type="checkbox" class="checkbox"></li>
-          <li class="item">CARDIO <input type="checkbox" class="checkbox"></li>
-          <li class="item">ÁGUA<input type="checkbox" class="checkbox"></li>
-          <li class="item">SONO<input type="checkbox" class="checkbox"></li>
+      <div id="buttom-container">
+        <button id="reload-button">RECARREGAR</button>
+      </div>
+      <br />
+      <ul id="checklist">
+        <li class="item">
+          <label>DIETA <input type="checkbox" class="checkbox" /> </label>
+        </li>
+        <li class="item">
+          <label>TREINO <input type="checkbox" class="checkbox" /> </label>
+        </li>
+        <li class="item">
+          <label>CARDIO <input type="checkbox" class="checkbox" /> </label>
+        </li>
+        <li class="item">
+          <label>ÁGUA <input type="checkbox" class="checkbox" /> </label>
+        </li>
+        <li class="item">
+          <label>SONO <input type="checkbox" class="checkbox" /> </label>
+        </li>
       </ul>
-      
-      <div id="summary-card" class="card">
-        <h2>Resumo</h2>
-        <p><span id="completed-count">0</span> de <span id="total-count">4</span> itens marcados.</p>
-        <p>Itens marcados: <span id="completed-items"></span></p>
+
+      <div id="elemento-para-capturar">
+        <div id="summary-card" class="card">
+         
+          <p id="data"></p>
+          <p>
+            <span id="completed-count">0</span> de
+            <span id="total-count">4</span> itens marcados.
+          </p>
+          <p>Itens marcados: <span id="completed-items"></span></p>
+        </div>
+      </div>
+
+      <!-- npm install --save html2canvas 
+        biblioteca print Faça o download da biblioteca html2canvas.js ou inclua-a em seu projeto usando uma CDN-->
+      <br />
+      <a id="download-link" style="display: none">Download Captura de Tela</a>
+
+      <button id="capturar" class="cap">Capturar</button>
+      <div id="captura-de-tela"></div>
     </div>
-<div class="rel">
-     <button id="reload-button">RECARREGAR</button>
-    </div>
-    <button class="but" id="view-history">HISTÓRICO</button>
-   
-  
-</div>
-  
+
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

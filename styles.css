@@ -1,124 +1,28 @@
 body {
-  font-family: 'Josefin Sans', sans-serif;
-  font-family: 'Jost', sans-serif;
-  font-family: 'Oxanium', cursive;
-  background-color: #f0f0f0;
+  font-family: "Josefin Sans", sans-serif;
+  font-family: "Jost", sans-serif;
+  font-family: "Oxanium", cursive;
+  background-color: #ffffff;
   display: flex;
-  justify-content: center; /* Centraliza o conteúdo horizontalmente */
-  align-items: center; /* Centraliza o conteúdo verticalmente */
+  justify-content: center;
+  align-items: center;
   height: 100vh;
   margin: 0;
 }
-
-h1{
-  color: #33ff00;
-  text-shadow: #333;
-}
-.container {
-  font-family: 'Josefin Sans', sans-serif;
-  font-family: 'Jost', sans-serif;
-  font-family: 'Oxanium', cursive;
-  width: 300px;
-  height: 670px;
-  color: #1c1c1c;
-  text-align: left; /* Alinha o conteúdo à esquerda */
-  max-width: 600px; /* Define a largura máxima do contêiner para controlar a responsividade */
-  margin: 20px; /* Adiciona espaço ao redor do contêiner */
-  padding: 20px; /* Adiciona um espaço interno ao contêiner */
-  background: rgb(138,0,0);
-  background: linear-gradient(180deg, rgba(138,0,0,1) 0%, rgba(194,0,0,1) 0%, rgba(80,0,0,1) 54%, rgba(28,0,0,1) 88%, rgba(0,0,0,1) 100%);
-  border-radius: 10px; /* Adiciona bordas arredondadas */
-  box-shadow: 10px 10px 30px rgb(55, 255, 0); /* Adiciona sombra */
-border-style: outset;
-border-width: 8px;
-border-color: #ac0000;
-}
-
-#checklist {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  
-}
-
-.checkbox {
-  appearance: none; /* Remove a aparência padrão do sistema operacional */
-  -webkit-appearance: none; /* Para navegadores baseados em WebKit (como o Safari) */
-  -moz-appearance: none; /* Para navegadores baseados em Mozilla (como o Firefox) */
-  width: 1000px; /* Largura personalizada do checkbox */
-  height: 20px; /* Altura personalizada do checkbox */
-  border: none;
-  cursor: pointer;
-  outline: none; /* Remove a borda de foco ao clicar */
-  position: relative;
-  transition: background-color 0.3s ease, border-color 0.3s ease; /* Adiciona transições suaves */
-
-}
-
-.item {
-  display: flex;
-  align-items: center; /* Alinha verticalmente os itens */
-  margin-bottom: 10px;
-  padding: 10px; /* Adiciona um espaço interno aos itens */
-  background-color: #f9f9f9; /* Adiciona um fundo cinza claro aos itens */
-  box-shadow: 5px 5px 10px rgb(0, 0, 0); /* Adiciona sombra */
-  border-radius: 5px; /* Adiciona bordas arredondadas aos itens */
-  border-style: outset;
-  transition: background-color 0.3s ease; /* Adiciona uma transição suave de cor de fundo */
-
-}
-
-.item:hover {
-  background-color: #33ff00; /* Muda a cor de fundo ao passar o cursor */
-
-}
-
-.checkbox {
-  margin-right: 10px;
-  cursor: pointer;  
-}
-
-.checked {
-  display: none;
-}
-
-
-
-.card {
-  color: #f0f0f0;
-  background: rgb(138, 0, 0);
-  background: rgb(138,0,0);
-  background: linear-gradient(180deg, rgba(138,0,0,1) 0%, rgba(194,0,0,1) 0%, rgba(80,0,0,1) 11%, rgba(28,0,0,1) 35%, rgba(0,0,0,1) 65%);
-  padding: 10px;
-  border-radius: 5px;
-  border-style: groove;
-  border-color: #222;
-  box-shadow: 0px 0px 100px rgb(0, 0, 0);
-  text-align: center;
-  margin-top: 20px;
-  transition: transform 0.3s ease; /* Adiciona uma transição suave */
-}
-
-.card:hover {
-  transform: scale(1.05); /* Aumenta o tamanho em 5% ao passar o cursor */
-}
-
-
-
 .dark-mode-toggle {
   position: absolute;
-    top: 10px; /* Distância a partir do topo da página */
-    right: 10px; /* Distância a partir da direita da página */
-    border-radius: 5px;
+  top: 10px;
+  right: 10px;
+  border-radius: 5px;
 }
 
 #dark-mode-button {
-  background-color: #810303;
+  background-color: #000000;
   border: none;
   border-radius: 50%;
   padding: 10px;
   cursor: pointer;
-  color: #fff;
+  color: #ffffff;
   font-size: 20px;
   outline: none;
   transition: background-color 0.3s;
@@ -152,92 +56,176 @@ i.fa-moon {
   color: #fff;
 }
 
+h1 {
+  color: #33ff00;
+  text-shadow: #333;
+}
+.container {
+  font-family: "Josefin Sans", sans-serif;
+  font-family: "Jost", sans-serif;
+  font-family: "Oxanium", cursive;
+  width: 300px;
+  height: 670px;
+  color: #1c1c1c;
+  text-align: left;
+  max-width: 600px;
+  margin: 20px;
+  padding: 20px;
+  background: rgb(138, 0, 0);
+  background: linear-gradient(
+    180deg,
+    rgba(138, 0, 0, 1) 0%,
+    rgba(194, 0, 0, 1) 0%,
+    rgba(80, 0, 0, 1) 54%,
+    rgba(28, 0, 0, 1) 88%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  border-radius: 10px;
+  box-shadow: 10px 10px 30px rgb(55, 255, 0);
+  border-style: outset;
+  border-width: 8px;
+  border-color: #ac0000;
+}
 
+#checklist {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 10px;
+  padding: 5px;
+  background-color: #f9f9f9;
+  box-shadow: 5px 5px 10px rgb(0, 0, 0);
+  border-radius: 5px;
+  border-style: outset;
+  transition: background-color 0.3s ease;
+}
+label:hover {
+  background-color: #33ff00;
+}
+
+.card {
+  color: #f0f0f0;
+  background: rgb(138, 0, 0);
+  background: rgb(138, 0, 0);
+  background: linear-gradient(
+    180deg,
+    rgba(138, 0, 0, 1) 0%,
+    rgba(194, 0, 0, 1) 0%,
+    rgba(80, 0, 0, 1) 11%,
+    rgba(28, 0, 0, 1) 35%,
+    rgba(0, 0, 0, 1) 65%
+  );
+  padding: 10px;
+  border-radius: 5px;
+  border-style: outset;
+  border-color: #480000;
+  box-shadow: 0px 0px 100px rgb(0, 0, 0);
+  text-align: center;
+  margin-top: 20px;
+  align-self: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+#data {
+  text-transform: uppercase;
+  font-size: large;
+  color: #33ff00;
+}
+
+.cap:hover {
+  transform: translateY(4px);
+  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.3);
+}
+
+.cap:active {
+  transform: translateY(4px);
+  box-shadow: none;
+}
+
+#button-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
 #reload-button {
- position: relative;
-  font-family: 'Josefin Sans', sans-serif;
-  font-family: 'Jost', sans-serif;
-  font-family: 'Oxanium', cursive;
+  font-family: "Josefin Sans", sans-serif;
+  font-family: "Jost", sans-serif;
+  font-family: "Oxanium", cursive;
   background-color: #060000;
-  margin-left: 25%;
   color: #fff;
   padding: 5px 10px;
   font-size: 16px;
   cursor: pointer;
   border-radius: 5px;
-  margin-top: 15px;
   transition: transform 0.2s, box-shadow 0.2s;
   box-shadow: 0px 0px 7px rgb(123, 255, 0);
   border-style: outset;
   border-width: 5px;
   border-color: #000000;
-  margin-bottom: 8px;
-  
 }
 
 #reload-button:hover {
-  transform: translateY(2px);
+  transform: translateY(4px);
   box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.3);
-  border-style: outset;
-  border-width: 5px;
-  border-color: #000000;
 }
 
 #reload-button:active {
   transform: translateY(4px);
   box-shadow: none;
-  
 }
 
-#view-history {
-  
-  font-family: 'Josefin Sans', sans-serif;
-  font-family: 'Jost', sans-serif;
-  font-family: 'Oxanium', cursive;
-  background-color: #060000;
+#capturar {
+  font-family: "Josefin Sans", sans-serif;
+  font-family: "Jost", sans-serif;
+  font-family: "Oxanium", cursive;
+  background-color: #000000;
   color: #fff;
-  padding: 5px 20px;
-  margin-left: 25%;
+  padding: 5px 10px;
   font-size: 16px;
   cursor: pointer;
   border-radius: 5px;
-  margin-left: 25%;
-  top: 35px;
   transition: transform 0.2s, box-shadow 0.2s;
-  box-shadow: 0px 0px 10px rgb(123, 255, 0);
+  box-shadow: 0px 0px 7px rgb(123, 255, 0);
   border-style: outset;
   border-width: 5px;
   border-color: #000000;
+  margin-top: 10px;
 }
 
-#view-history:hover {
-  transform: translateY(2px);
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+#captura-de-tela {
+  position: relative;
+  bottom: 60%;
+  box-shadow: 0px 100px 30px rgb(0, 0, 0);
+}
+
+.botao-compartilhar {
+  padding: 10px 20px;
+  background-color: #ff0707;
+  color: #fff;
+  text-transform: uppercase;
+  border: none;
+  width: 300px;
   border-style: outset;
-  border-width: 5px;
-  border-color: #000000;
+  border-color: #930000;
+  cursor: pointer;
+  font-family: "Josefin Sans", sans-serif;
+  font-family: "Jost", sans-serif;
+  font-family: "Oxanium", cursive;
+  border-width: 3px;
+  box-shadow: 0px 0px 7px rgb(123, 255, 0);
 }
 
-#view-history:active {
+.botao-compartilhar:hover {
+  background-color: #ff4f4f;
   transform: translateY(4px);
-  box-shadow: none;
 }
-.hidden {
-  display: none;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
