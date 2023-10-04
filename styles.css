@@ -1,0 +1,243 @@
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Jost', sans-serif;
+  font-family: 'Oxanium', cursive;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center; /* Centraliza o conteúdo horizontalmente */
+  align-items: center; /* Centraliza o conteúdo verticalmente */
+  height: 100vh;
+  margin: 0;
+}
+
+h1{
+  color: #33ff00;
+  text-shadow: #333;
+}
+.container {
+  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Jost', sans-serif;
+  font-family: 'Oxanium', cursive;
+  width: 300px;
+  height: 670px;
+  color: #1c1c1c;
+  text-align: left; /* Alinha o conteúdo à esquerda */
+  max-width: 600px; /* Define a largura máxima do contêiner para controlar a responsividade */
+  margin: 20px; /* Adiciona espaço ao redor do contêiner */
+  padding: 20px; /* Adiciona um espaço interno ao contêiner */
+  background: rgb(138,0,0);
+  background: linear-gradient(180deg, rgba(138,0,0,1) 0%, rgba(194,0,0,1) 0%, rgba(80,0,0,1) 54%, rgba(28,0,0,1) 88%, rgba(0,0,0,1) 100%);
+  border-radius: 10px; /* Adiciona bordas arredondadas */
+  box-shadow: 10px 10px 30px rgb(55, 255, 0); /* Adiciona sombra */
+border-style: outset;
+border-width: 8px;
+border-color: #ac0000;
+}
+
+#checklist {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  
+}
+
+.checkbox {
+  appearance: none; /* Remove a aparência padrão do sistema operacional */
+  -webkit-appearance: none; /* Para navegadores baseados em WebKit (como o Safari) */
+  -moz-appearance: none; /* Para navegadores baseados em Mozilla (como o Firefox) */
+  width: 1000px; /* Largura personalizada do checkbox */
+  height: 20px; /* Altura personalizada do checkbox */
+  border: none;
+  cursor: pointer;
+  outline: none; /* Remove a borda de foco ao clicar */
+  position: relative;
+  transition: background-color 0.3s ease, border-color 0.3s ease; /* Adiciona transições suaves */
+
+}
+
+.item {
+  display: flex;
+  align-items: center; /* Alinha verticalmente os itens */
+  margin-bottom: 10px;
+  padding: 10px; /* Adiciona um espaço interno aos itens */
+  background-color: #f9f9f9; /* Adiciona um fundo cinza claro aos itens */
+  box-shadow: 5px 5px 10px rgb(0, 0, 0); /* Adiciona sombra */
+  border-radius: 5px; /* Adiciona bordas arredondadas aos itens */
+  border-style: outset;
+  transition: background-color 0.3s ease; /* Adiciona uma transição suave de cor de fundo */
+
+}
+
+.item:hover {
+  background-color: #33ff00; /* Muda a cor de fundo ao passar o cursor */
+
+}
+
+.checkbox {
+  margin-right: 10px;
+  cursor: pointer;  
+}
+
+.checked {
+  display: none;
+}
+
+
+
+.card {
+  color: #f0f0f0;
+  background: rgb(138, 0, 0);
+  background: rgb(138,0,0);
+  background: linear-gradient(180deg, rgba(138,0,0,1) 0%, rgba(194,0,0,1) 0%, rgba(80,0,0,1) 11%, rgba(28,0,0,1) 35%, rgba(0,0,0,1) 65%);
+  padding: 10px;
+  border-radius: 5px;
+  border-style: groove;
+  border-color: #222;
+  box-shadow: 0px 0px 100px rgb(0, 0, 0);
+  text-align: center;
+  margin-top: 20px;
+  transition: transform 0.3s ease; /* Adiciona uma transição suave */
+}
+
+.card:hover {
+  transform: scale(1.05); /* Aumenta o tamanho em 5% ao passar o cursor */
+}
+
+
+
+.dark-mode-toggle {
+  position: absolute;
+    top: 10px; /* Distância a partir do topo da página */
+    right: 10px; /* Distância a partir da direita da página */
+    border-radius: 5px;
+}
+
+#dark-mode-button {
+  background-color: #810303;
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 20px;
+  outline: none;
+  transition: background-color 0.3s;
+}
+
+#dark-mode-button:hover {
+  background-color: #444;
+}
+
+i.fa-sun {
+  display: inline-block;
+  transition: transform 0.3s;
+  color: #ffc402;
+}
+
+.dark-mode-active i.fa-sun {
+  transform: scale(0);
+}
+
+i.fa-moon {
+  display: none;
+  color: #527dff;
+}
+
+.dark-mode-active i.fa-moon {
+  display: inline-block;
+}
+
+.dark-mode-active {
+  background-color: #222;
+  color: #fff;
+}
+
+
+
+#reload-button {
+ position: relative;
+  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Jost', sans-serif;
+  font-family: 'Oxanium', cursive;
+  background-color: #060000;
+  margin-left: 25%;
+  color: #fff;
+  padding: 5px 10px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 15px;
+  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0px 0px 7px rgb(123, 255, 0);
+  border-style: outset;
+  border-width: 5px;
+  border-color: #000000;
+  margin-bottom: 8px;
+  
+}
+
+#reload-button:hover {
+  transform: translateY(2px);
+  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.3);
+  border-style: outset;
+  border-width: 5px;
+  border-color: #000000;
+}
+
+#reload-button:active {
+  transform: translateY(4px);
+  box-shadow: none;
+  
+}
+
+#view-history {
+  
+  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Jost', sans-serif;
+  font-family: 'Oxanium', cursive;
+  background-color: #060000;
+  color: #fff;
+  padding: 5px 20px;
+  margin-left: 25%;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-left: 25%;
+  top: 35px;
+  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0px 0px 10px rgb(123, 255, 0);
+  border-style: outset;
+  border-width: 5px;
+  border-color: #000000;
+}
+
+#view-history:hover {
+  transform: translateY(2px);
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+  border-style: outset;
+  border-width: 5px;
+  border-color: #000000;
+}
+
+#view-history:active {
+  transform: translateY(4px);
+  box-shadow: none;
+}
+.hidden {
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

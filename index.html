@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Jost:wght@300;500&family=Oxanium:wght@500&display=swap" rel="stylesheet">
+    <title>TO DO LIST</title>
+</head>
+<body>
+ <div class="dark-mode-toggle">
+          <button id="dark-mode-button">
+              <i class="fas fa-sun"></i>
+              <i class="fas fa-moon"></i>
+          </button>
+      </div>
+    <div class="container">
+        <h1>CHECKLIST</h1>
+
+
+  
+    
+        <ul id="checklist">
+          <li class="item">DIETA <input type="checkbox" class="checkbox"></li>
+          <li class="item">TREINO <input type="checkbox" class="checkbox"></li>
+          <li class="item">CARDIO <input type="checkbox" class="checkbox"></li>
+          <li class="item">ÁGUA<input type="checkbox" class="checkbox"></li>
+          <li class="item">SONO<input type="checkbox" class="checkbox"></li>
+      </ul>
+      
+      <div id="summary-card" class="card">
+        <h2>Resumo</h2>
+        <p><span id="completed-count">0</span> de <span id="total-count">4</span> itens marcados.</p>
+        <p>Itens marcados: <span id="completed-items"></span></p>
+    </div>
+<div class="rel">
+     <button id="reload-button">RECARREGAR</button>
+    </div>
+    <button class="but" id="view-history">HISTÓRICO</button>
+   
+  
+</div>
+  
+    <script src="script.js"></script>
+</body>
+</html>
